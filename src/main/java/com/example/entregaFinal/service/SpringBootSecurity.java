@@ -19,7 +19,7 @@ public class SpringBootSecurity {
         return new UserDetailServiceImpl();
     }
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
     @Bean
